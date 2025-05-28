@@ -2,12 +2,21 @@
 
 int main(void)
 {
-    for (int row = 0; row < 3; row++)
+    // Never change n
+    const int n = 3;
+    
+    // Print n rows
+    for (int i = 0; i < n; i++)
     {
-        for (int col = 0; col < 3; col++)
-        {
-            printf("#");
-        }
-        printf("\n");
+        print_row(n);
     }
+}
+
+void print_row(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        printf("#");
+    }
+    printf("\n");
 }
