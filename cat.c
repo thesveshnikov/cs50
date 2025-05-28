@@ -1,11 +1,16 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void meow(int n);
+void meow(void);
 
 int main(void)
 {
-    int n = get_int("Number: ");
+    int n;
+    do
+    {
+        n = get_int("Number: ");
+    }
+    while (n < 1);
     meow(n);
 }
 
