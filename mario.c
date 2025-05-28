@@ -6,7 +6,7 @@ int main(void)
     {
         for (int col = 0; col < 3; col++)
         {
-            printf("#");
+            printf("#\n");
         }
     }
 }
