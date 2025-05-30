@@ -14,5 +14,8 @@ int main(void)
 
 void print_row(int bricks)
 {
-    printf("#");
+    for (int i = 0; i < bricks; i++)
+    {
+        printf("#");
+    }
 }
