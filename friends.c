@@ -15,5 +15,5 @@ int main(void)
     // Phone number
     string number = get_string("What is your phone number? ");
 
-    printf("My new friend's name is %s, %i, they are from %s and the phone number is %s", name, age, hometown, number);
+    printf("My new friend's name is %s, %i, they are from %s and the phone number is %s\n", name, age, hometown, number);
 }
