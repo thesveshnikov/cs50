@@ -9,7 +9,10 @@ int main(void)
     int height = get_int("What is the height of the pyramid? ");
     
     // Print a pyramid of that height
-    print_row(height);
+    for (int i = 0; i < height; i++)
+    {
+        print_row(height);
+    }
 }
 
 void print_row(int bricks)
