@@ -1,8 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int main(void)
+int main(int argc, string argv[])
 {
-    string asnwer = get_string("What's your name? ");
-    printf("hello, %s\n", answer);
+    printf("hello, %s\n", argv[0]);
 }
