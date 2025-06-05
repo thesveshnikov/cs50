@@ -10,11 +10,12 @@ int main()
     for (int i = 1; i < 5; i++)
     {
         numbers[i] = numbers[i - 1] * 2;
+        printf("%i\n", numbers[i]);
     }
     
     // Print out the values one by one
-    for (int i = 0; i < 5; i++)
-    {
-        printf("%i\n", numbers[i]);
-    }
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     printf("%i\n", numbers[i]);
+    // }
 }
