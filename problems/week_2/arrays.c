@@ -4,15 +4,13 @@ int main()
 {
     // Declare an array
     int numbers[5];
+    numbers[0] = 1;
     
     // Populate an array
-    numbers[0] = 1;
-    numbers[1] = numbers[0] * 2;
-    numbers[2] = numbers[1] * 2;
-    numbers[3] = numbers[2] * 2;
-    numbers[4] = numbers[3] * 2;
-    
-    // int numbers[5] = {1, 2, 4, 8, 16};
+    for (int i = 1; i < 5; i++)
+    {
+        numbers[i] = numbers[i - 1] * 2;
+    }
     
     // Print out the values one by one
     for (int i = 0; i < 5; i++)
