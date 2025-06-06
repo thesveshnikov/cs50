@@ -1,4 +1,5 @@
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -12,6 +13,15 @@ int main(int argc, string argv[])
     }
     
     string text = argv[1];
+    
+    for (int i = 0; i < strlen(text); i++)
+    {
+        if (!isalpha(text[i]))
+        {
+            printf("This is not a letter.\n");
+            return 2;
+        }
+    }
     
     // Iterate through each element in the string
     for (int i = 1; i < strlen(text); i++)
