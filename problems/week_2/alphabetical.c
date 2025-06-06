@@ -13,6 +13,7 @@ int main(void)
         if (text[i] < text[i - 1])
         {
             printf("No\n");
+            return 0;
         }
     }
     // Print out yes
