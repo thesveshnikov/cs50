@@ -5,7 +5,7 @@
 int main(void)
 {
     // Get user's input
-    string text = get_string("Input: \n");
+    string text = get_string("Input: ");
     
     // Iterate through each element in the string
         // check if it is alphabetical
