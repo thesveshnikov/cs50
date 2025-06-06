@@ -10,7 +10,7 @@ int main(void)
     // Iterate through each element in the string
     for (int i = 0; i < strlen(text); i++)
     {
-        printf("%c", text[i]);
+        printf("%c ", text[i]);
     }
         // check if it is alphabetical
     
