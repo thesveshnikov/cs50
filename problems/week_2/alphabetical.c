@@ -8,6 +8,10 @@ int main(void)
     string text = get_string("Input: ");
     
     // Iterate through each element in the string
+    for (int i = 0; i < strlen(text); i++)
+    {
+        printf("%c", text[i]);
+    }
         // check if it is alphabetical
     
     // Print out yes or no
