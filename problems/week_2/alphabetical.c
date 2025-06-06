@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void)
+int main(int argc, string argv[])
 {
     // Get user's input
-    string text = get_string("Input: ");
+    string text = argv[1];
     
     // Iterate through each element in the string
     for (int i = 1; i < strlen(text); i++)
