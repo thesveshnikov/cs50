@@ -5,6 +5,12 @@
 int main(int argc, string argv[])
 {
     // Get user's input
+    if (argc != 2)
+    {
+        printf("Please provide a word.\n");
+        return 1;
+    }
+    
     string text = argv[1];
     
     // Iterate through each element in the string
