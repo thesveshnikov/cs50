@@ -1,25 +1,25 @@
-#include <stdio.h>
 #include <cs50.h>
-
-void print_row(int bricks);
+#include <stdio.h>
 
 int main(void)
 {
-    // Prompt user for input
-    int height = get_int("What is the height of the pyramid? ");
-    
-    // Print a pyramid of that height
-    for (int i = 0; i < height; i++)
+    int height;
+    do
     {
-        print_row(i + 1);
+        height = get_int("Height: ");
     }
-}
+    while (height < 1 || height > 8);
 
-void print_row(int bricks)
-{
-    for (int i = 0; i < bricks; i++)
+    for (int i = 1; i <= height; i++)
     {
-        printf("#");
+        for (int j = 0; j < height - i; j++)
+        {
+            printf(" ");
+        }
+        for (int k = 0; k < i; k++)
+        {
+            printf("#");
+        }
+        printf("\n");
     }
-    printf("\n");
 }
