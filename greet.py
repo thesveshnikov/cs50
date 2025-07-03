@@ -1,9 +1,11 @@
-def main():
-    name = input("What's your name? ")
-    hello(name)
+from flask import Flask, request
 
-def hello(to="world"):
-    print("hello,", to)
+app = Flask(__name__)
+
+@app.route("/greet")
+def greet():
+    name = request.args.get("name", "world")
+    return f"Hello, {name}!"
 
 if __name__ == "__main__":
-    main()
+    app.run()
