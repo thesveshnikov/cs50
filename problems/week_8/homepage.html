@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #0066cc;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Homepage</h1>
+    <p>This is a simple homepage created for CS50.</p>
+    
+    <h2>My Favorite Websites</h2>
+    <ul>
+        <li><a href="https://www.harvard.edu">Harvard University</a></li>
+        <li><a href="https://cs50.harvard.edu">CS50</a></li>
+        <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
+    </ul>
+    
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Programming</li>
+        <li>Reading</li>
+        <li>Hiking</li>
+    </ul>
+    
+    <button onclick="changeColor()">Change Background</button>
+    
+    <script>
+        function changeColor() {
+            const colors = ['#f0f0f0', '#fff0f0', '#f0fff0', '#f0f0ff'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
